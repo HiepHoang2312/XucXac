@@ -1,0 +1,27 @@
+@font-face {
+    font-family:Pony ;
+    src: url(font/Pony.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Pony;
+}
+.game{
+    background-image:url('./img/bgGame.png');
+    width: 100%;
+    height: 800px;
+}
+.row{
+    width: 100%;
+}
+.btnTaiXiu{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #7b3ac6;
+}
+.KetQua{
+    font-size: 35px;
+}
