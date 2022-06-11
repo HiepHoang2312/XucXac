@@ -12,7 +12,6 @@ const BaiTapXucSacReducer=(state=initialState, action)=>{
     console.log(action);
     switch (action.type) {
         case "DAT_CUOC":{
-         
             return{...state,KetQua:action.datcuoc};
         }
         case"PLAY_GAME":{
@@ -26,8 +25,9 @@ const BaiTapXucSacReducer=(state=initialState, action)=>{
             let TongXucXac =XucXacnew.reduce((tongdiem,XucXac,index)=>{
                 return tongdiem +=XucXac.value;
             },0);
-            if((TongXucXac>11 &&state.KetQua===true)||(TongXucXac<=11 &&state.KetQua===false)){
+            if((TongXucXac>10 &&state.KetQua===true)||(TongXucXac<=10 &&state.KetQua===false)){
                 state.soBanThang +=1;
+                alert("bạn thắng");
             }
             return {...state,XucXac:XucXacnew}
         }
